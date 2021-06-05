@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+    <title>MemoryGameNextTry </title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="content">
+            <div class="nav-box">
+                <button id="chooseGameBtn-6">6 cards</button>
+                <button id="chooseGameBtn-12">12 cards</button>
+                <button id="chooseGameBtn-16">16 cards</button>
+            </div>
+            <div class="card-box">
+
+            </div>
+            <div class="control-box">
+                <div class="element-wrapper">
+                    <div class="control-box__moves">
+                        <div id="moves-box__output">0</div>
+                        <div id="moves-box__label">moves</div>
+                    </div>
+                    <div class="control-box__timer">
+                        <div id="timer__output">00:00</div>
+                        <div id="timer__label">time</div>
+                    </div>
+                </div>
+                <div class="element-wrapper">
+                    <div class="control-box__buttons">
+                        <!-- <button id="new-game-btn">new game</button> -->
+                        <button id="hint-btn">get a hint</button>
+                        <button id="give-up-btn">give up</button>
+                    </div>
+                    <!-- <button id="hint-btn">get a hint</button> -->
+                    <button id="new-game-btn">new game</button>
+                </div>
+            </div>
+
+            <div class="table-wrapper">
+                <table border="1">
+                    <caption>
+                        <h3>Best Time</h3>
+                    </caption>
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>6 cards</th>
+                            <th>12 cards</th>
+                            <th>16 cards</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1st</td>
+                            <td id="first6">00:00</td>
+                            <td id="first12">00:00</td>
+                            <td id="first16">00:00</td>
+                        </tr>
+                        <tr>
+                            <td>2nd</td>
+                            <td id="second6">00:00</td>
+                            <td id="second12">00:00</td>
+                            <td id="second16">00:00</td>
+                        </tr>
+                        <tr>
+                            <td>3rd</td>
+                            <td id="third6">00:00</td>
+                            <td id="third12">00:00</td>
+                            <td id="third16">00:00</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- popup -->
+            <!-- <div class="modal" id="modal">
+                <button class="modal__close-btn">&times;</button>
+                <div class="modal__header">вы справились!</div>
+                <div class="moves-count">сделано ходов: 6</div>
+                <button class="modal__new-game-btn">новая игра</button>
+            </div>
+            <div id="overlay"></div> -->
+        </div>
+    </div>
+</body>
+</html>
